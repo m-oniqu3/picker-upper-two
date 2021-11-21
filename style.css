@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.background {
+  background-image: url(images/delivery.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: rgba(100, 148, 237, 0.486);
+  height: 10vh;
+}
+
+header {
+  margin: 4rem 0;
+}
+header .heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+  color: white;
+  margin: 2rem 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+header > p {
+  color: white;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+button {
+  margin: 1rem 0;
+}
+
+.btn {
+  background: #ff9505;
+  border-radius: 10px;
+  padding: 0.625rem 1.25rem;
+  border: none;
+  transition: all 0.2s ease-in 0s;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/*
+
+About
+
+
+*/
+
+.about {
+  margin: 2rem 0;
+}
+.titles {
+  font-family: "Montserrat", sans-serif;
+  color: #016fb9;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.about-text > p {
+  margin: 1.5rem 0;
+}
+
+.about-image > img {
+  width: 100%;
+  margin: 3rem auto;
+}
+
+/* 
+
+Benefits
+
+*/
+.benefits-main {
+  margin: 3rem 0;
+}
+
+.benefits {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.benefits > p {
+  width: 15rem;
+  margin: 1rem auto;
+}
+.circle {
+  background: #353531;
+  border-radius: 50%;
+  width: 5.375rem;
+  height: 5.375rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.sub-title {
+  color: #ff9505;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  header > * {
+    grid-column: 1/8;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-image {
+    grid-column: 1/7;
+  }
+
+  .about-text {
+    order: 1;
+    grid-column: 8/-1;
+  }
+
+  .titles {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+
+  .benefits-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  header > * {
+    grid-column: 1/6;
+  }
+
+  header .heading {
+    font-size: 4rem;
+  }
+
+  header > p {
+    width: 80%;
+  }
+
+  .background {
+    height: 100vh;
+  }
+}
